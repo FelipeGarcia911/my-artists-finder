@@ -1,0 +1,73 @@
+{
+  "name": "my-artist-finder",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My Artist Finder - Code Challenge",
+  "author": "Felipe García",
+  "engines": {
+    "node": "14.15.0"
+  },
+  "keywords": [
+    "gatsby",
+    "typescript",
+    "lazy-loading",
+    "code-challenge"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/css": "^11.5.0",
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "axios": "^0.24.0",
+    "caniuse-lite": "^1.0.30001486",
+    "gatsby": "^4.2.0",
+    "gatsby-plugin-emotion": "^7.2.0",
+    "gatsby-plugin-fontawesome-css": "^1.2.0",
+    "gatsby-plugin-image": "^2.2.0",
+    "gatsby-plugin-manifest": "^4.2.0",
+    "gatsby-plugin-module-resolver": "^1.0.3",
+    "gatsby-plugin-react-helmet": "^5.2.0",
+    "gatsby-plugin-sitemap": "^5.2.0",
+    "gatsby-plugin-styled-components": "^5.2.0",
+    "gatsby-plugin-ts-config": "^1.1.5",
+    "gatsby-plugin-typescript": "^4.2.0",
+    "gatsby-source-filesystem": "^4.2.0",
+    "query-string": "^7.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-lazy-load-image-component": "^1.5.1",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/node": "^16.11.9",
+    "@types/react": "^17.0.36",
+    "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "babel-plugin-styled-components": "^2.0.1",
+    "dotenv": "^16.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "2.1.1",
+    "typescript": "^3.9.7"
+  },
+  "resolutions": {
+    "webpack": "5.52.1"
+  }
+}

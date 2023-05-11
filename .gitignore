@@ -1,0 +1,8 @@
+# Files
+.DS_Store
+.env*
+
+# Folders
+node_modules/
+.cache/
+public
