@@ -30,16 +30,17 @@ export const Content = styled.div`
 
 export const Links = styled(Content)`
   margin-bottom: 1rem;
-  &:hover {
-    cursor: pointer;
-    text-decoration: underline;
-  }
 `
 
 export const Title = styled(Typography.Title)`
   color: ${theme.colors.black};
   margin: 0;
   text-align: center;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 `
 
 export const Genre = styled(Typography.Subtitle)`

@@ -27,7 +27,7 @@ const GenericArtistList: React.FC<GenericArtistListProps> = (props) => {
           ))}
         </GridList>
       ) : (
-        <NoResults>No artist</NoResults>
+        <NoResults>No Artist in List</NoResults>
       )}
     </Container>
   )

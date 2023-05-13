@@ -32,8 +32,8 @@ const ArtistItem: React.FC<ArtistItemProps> = (props) => {
         <S.Image src={image} alt={name} height="250px" />
       </S.Content>
       <S.Content>
-        <S.Links onClick={handleOnClick}>
-          <S.Title>{name}</S.Title>
+        <S.Links>
+          <S.Title onClick={handleOnClick}>{name}</S.Title>
           <S.Genre>{genre}</S.Genre>
         </S.Links>
         <FavoriteButton artist={artist} />

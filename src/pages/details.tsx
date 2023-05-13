@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { parse } from 'query-string'
 
-import Layout from '@/components/Layout'
-import Loader from '@/components/Loader'
-import Navbar from '@/components/Navbar'
-import SEO from '@/components/Common/SEO'
 import ArtistDetails from '@/components/ArtistDetails'
-
-import Providers from '@/providers/Providers'
+import BasePage from '@/components/BasePage'
+import Loader from '@/components/Loader'
 
 import useAPI from '@/hooks/useAPI'
 
@@ -19,7 +15,7 @@ const DetailsPage: React.FC<{}> = (props) => {
   const [artist, setArtist] = useState<ArtistType>()
 
   const getArtistId = (): string => {
-    const urlParams = parse(props.location.search)
+    const urlParams = parse(props?.location?.search)
     return `${urlParams?.id}`
   }
 
@@ -31,18 +27,14 @@ const DetailsPage: React.FC<{}> = (props) => {
   useEffect(() => {
     const id = getArtistId()
     if (id) getArtist(id)
-  }, [props.location])
+  }, [props?.location])
 
   return (
-    <Providers>
-      <SEO title="Artist Details" />
-      <Navbar />
-      <Layout>
-        <Loader loading={loading}>
-          {artist ? <ArtistDetails artist={artist} /> : null}
-        </Loader>
-      </Layout>
-    </Providers>
+    <BasePage title="Artist Details">
+      <Loader loading={loading}>
+        {artist ? <ArtistDetails artist={artist} /> : null}
+      </Loader>
+    </BasePage>
   )
 }
 
